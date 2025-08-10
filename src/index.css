@@ -5,17 +5,22 @@
 
 @font-face {
     font-family: 'Geist-Regular';
-    src: url('../public/Geist-Regular.ttf') format('truetype');
+    src: url('../public/fonts/Geist-Regular.ttf') format('truetype');
 }
 
 @font-face {
     font-family: 'Geist-Bold';
-    src: url('../public/Geist-Bold.ttf') format('truetype');
+    src: url('../public/fonts/Geist-Bold.ttf') format('truetype');
 }
 
 @font-face {
     font-family: 'Geist-Medium';
-    src: url('../public/Geist-Medium.ttf') format('truetype');
+    src: url('../public/fonts/Geist-Medium.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Bebas-Neue';
+    src: url('../public/fonts/BebasNeue-Regular.ttf') format('truetype');
 }
 
 html, body {
