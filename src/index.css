@@ -1,0 +1,29 @@
+/* stylelint-disable at-rule-no-unknown */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: 'Geist-Regular';
+    src: url('../public/Geist-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Geist-Bold';
+    src: url('../public/Geist-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Geist-Medium';
+    src: url('../public/Geist-Medium.ttf') format('truetype');
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+#root {
+    display: flex;
+    flex-direction: column;
+}
