@@ -6,7 +6,7 @@ import Skills from './components/skills.jsx'
 
 function SetMainSection() {
     return (
-        <div className="p-10 flex flex-col gap-52">
+        <div className="p-10 flex flex-col gap-16 lg:gap-36">
             <img src="/images/panel.png" alt="Logo" className="mx-auto rounded-2xl" />
             <About />
             <Skills />

@@ -23,6 +23,11 @@
     src: url('../public/fonts/BebasNeue-Regular.ttf') format('truetype');
 }
 
+@font-face {
+    font-family: 'Michroma';
+    src: url('../public/fonts/Michroma-Regular.ttf') format('truetype');
+}
+
 html, body {
     margin: 0;
     padding: 0;
