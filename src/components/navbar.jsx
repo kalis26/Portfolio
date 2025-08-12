@@ -17,9 +17,9 @@ export default function Navbar({ scrollY }) {
                         <a href="/contact.html" className="text-[#ceced3] px-3 py-1 hover:text-[#FFFFFF] hover:bg-[rgba(255,255,255,0.15)] rounded-lg transition-all duration-300 text-center">Contact</a>
                     </ul>
                     <div className='flex-1 flex justify-end items-center space-x-4'>
-                        <button className="text-black text-sm px-2 py-2 bg-white rounded-lg transition-all duration-300 hover:bg-[rgb(188,185,185)]">
-                            <img src="/images/pdf.png" alt="Avatar" className="inline-block h-4 w-4 mr-1" />
-                            Download CV
+                        <button className="text-black text-sm px-2 py-2 bg-white rounded-lg transition-all duration-300 hover:bg-[rgb(188,185,185)] flex items-center justify-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 mr-1" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2H6a2 2 0 0 0-2 2v16c0 1.1.9 2 2 2h12a2 2 0 0 0 2-2V9l-7-7z"/><path d="M13 3v6h6"/></svg>
+                            Download Resume
                         </button>
                     </div>
                 </div>
