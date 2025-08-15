@@ -1,6 +1,6 @@
 export default function Footer() {
     return (
-        <div className="w-full bg-black flex flex-col p-6 font-[Geist-Regular] border-t-2 border-solid border-white/10">
+        <div id="contact" className="w-full bg-black flex flex-col p-6 font-[Geist-Regular] border-t-2 border-solid border-white/10">
             <div>
                 <h1 className="text-xl font-[Geist-Bold] text-white/90 pb-2">Contact</h1>
                 <p className="text-base text-white/50">E-mail: aminera2006@gmail.com</p>

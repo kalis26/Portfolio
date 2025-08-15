@@ -36,7 +36,7 @@ function ListExperience({exp}) {
     );
 
     return (
-        <div className="flex md:p-6 p-1 flex-col gap-8" id="experience">
+        <div className="flex md:p-6 p-1 flex-col gap-8">
             <h1 className="text-center md:text-left text-5xl text-white font-[Geist-Bold] md:p-4 p-2">Experience & Education</h1>
             {listexp}
         </div>

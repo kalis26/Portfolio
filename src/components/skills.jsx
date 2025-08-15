@@ -41,7 +41,7 @@ export default function Skills() {
     return (
         <div className="md:p-6 p-2">
             <h1 className="text-white font-[Geist-Bold] text-5xl p-4 mb-8 text-center">
-                Tech Stack
+                Skills
             </h1>
             <SkillGrid exp={CurrentStack} />
             <h1 className="text-white font-[Geist-Bold] text-5xl p-4 mb-8 text-center">

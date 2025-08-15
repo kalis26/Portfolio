@@ -33,6 +33,10 @@
     src: url('../public/fonts/Michroma-Regular.ttf') format('truetype');
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 html, body {
     margin: 0;
     padding: 0;

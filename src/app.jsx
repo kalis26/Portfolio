@@ -44,9 +44,15 @@ function SetMainSection() {
                         </div>
                     </div>
                 </div>
-                <About />
-                <Skills />
-                <Experience />
+                <div id="about">
+                    <About />
+                </div>
+                <div id="skills">
+                    <Skills />
+                </div>
+                <div id="experience">
+                    <Experience />
+                </div>
                 
             </div>
             <Footer />
