@@ -9,13 +9,13 @@ function SetMainSection() {
     return (
         <>
             <div className="p-5 md:p-10 flex flex-col gap-16 lg:gap-36">
-                <div className='rounded-lg pt-6 pl-6 pr-6 md:rounded-2xl md:pt-16 md:pl-6 md:pr-6 bg-[linear-gradient(red,transparent),linear-gradient(to_top_left,lime,transparent),linear-gradient(to_top_right,blue,transparent)] bg-[length:auto] bg-blend-screen relative'>
+                <div className='md:shadow-lg shadow-white/15 rounded-lg pt-6 pl-6 pr-6 md:rounded-2xl md:pt-16 md:pl-6 md:pr-6 bg-[linear-gradient(red,transparent),linear-gradient(to_top_left,lime,transparent),linear-gradient(to_top_right,blue,transparent)] bg-[length:auto] bg-blend-screen relative'>
                     <div className='flex flex-col items-center justify-center pb-28 md:hidden'>
                         <h1 className='text-white font-[Geist-Bold] text-6xl text-center'>Amine Rachid</h1>
                         <p className='text-white/70 font-[Geist-Light] text-2xl text-center'>Computer Science Student & Junior Dev</p>
                     </div>
-                    <img src='/images/panel2.png' alt='Panel' className='hidden md:block mx-auto'></img>
-                    <img src='/images/panelmobile.png' alt='PanelMobile' className='md:hidden'></img>
+                    <img src='/images/panel.png' alt='Panel' className='hidden md:block mx-auto shadow-2xl shadow-black'></img>
+                    <img src='/images/panelmobile.png' alt='PanelMobile' className='md:hidden shadow-2xl shadow-black'></img>
                     <div className="hidden absolute bottom-10 md:right-24 md:flex flex-row gap-3">
                         <div className='rounded-lg border border-white/20 hover:border-white transition-all duration-200'>
                             <button className="m-1 bg-white text-black px-6 py-3 rounded-md font-[Geist-Medium] text-sm transition-all duration-300 flex items-center justify-center">
