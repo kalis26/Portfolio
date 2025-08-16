@@ -4,33 +4,23 @@
 @tailwind utilities;
 
 @font-face {
-    font-family: 'Geist-Light';
-    src: url('../public/fonts/Geist-Light.ttf') format('truetype');
-}
-
-@font-face {
     font-family: 'Geist-Regular';
-    src: url('../public/fonts/Geist-Regular.ttf') format('truetype');
+    src: url('../public/fonts/Geist-Regular.woff2') format('woff2');
 }
 
 @font-face {
     font-family: 'Geist-Bold';
-    src: url('../public/fonts/Geist-Bold.ttf') format('truetype');
+    src: url('../public/fonts/Geist-Bold.woff2') format('woff2');
 }
 
 @font-face {
     font-family: 'Geist-Medium';
-    src: url('../public/fonts/Geist-Medium.ttf') format('truetype');
-}
-
-@font-face {
-    font-family: 'Bebas-Neue';
-    src: url('../public/fonts/BebasNeue-Regular.ttf') format('truetype');
+    src: url('../public/fonts/Geist-Medium.woff2') format('woff2');
 }
 
 @font-face {
     font-family: 'Michroma';
-    src: url('../public/fonts/Michroma-Regular.ttf') format('truetype');
+    src: url('../public/fonts/Michroma-Regular.woff2') format('woff2');
 }
 
 html {

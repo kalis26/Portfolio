@@ -4,6 +4,7 @@ import Navbar from './components/navbar.jsx';
 import Experience from './components/experience.jsx'
 import Skills from './components/skills.jsx'
 import Footer from './components/footer.jsx'
+import Projects from './components/projects.jsx';
 
 function SetMainSection() {
     return (
@@ -12,7 +13,7 @@ function SetMainSection() {
                 <div className='md:shadow-lg shadow-white/15 rounded-lg pt-6 pl-6 pr-6 md:rounded-2xl md:pt-16 md:pl-6 md:pr-6 bg-[linear-gradient(red,transparent),linear-gradient(to_top_left,lime,transparent),linear-gradient(to_top_right,blue,transparent)] bg-[length:auto] bg-blend-screen relative'>
                     <div className='flex flex-col items-center justify-center pb-28 md:hidden'>
                         <h1 className='text-white font-[Geist-Bold] text-6xl text-center'>Amine Rachid</h1>
-                        <p className='text-white/70 font-[Geist-Light] text-2xl text-center'>Computer Science Student & Junior Dev</p>
+                        <p className='text-white/70 font-[Geist-Regular] text-2xl text-center'>Computer Science Student & Junior Dev</p>
                     </div>
                     <img src='/images/panel.png' alt='Panel' className='hidden md:block mx-auto shadow-2xl shadow-black'></img>
                     <img src='/images/panelmobile.png' alt='PanelMobile' className='md:hidden shadow-2xl shadow-black'></img>
@@ -50,10 +51,12 @@ function SetMainSection() {
                 <div id="skills">
                     <Skills />
                 </div>
+                <div id="projects">
+                    <Projects />
+                </div>
                 <div id="experience">
                     <Experience />
-                </div>
-                
+                </div>            
             </div>
             <Footer />
         </>
