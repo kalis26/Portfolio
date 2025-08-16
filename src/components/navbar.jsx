@@ -4,45 +4,6 @@ export default function Navbar({ scrollY }) {
 
     const [showOverlay, setShowOverlay] = useState(false);
 
-    const smoothScrollTo = (targetPosition, duration = 600) => {
-        const startPosition = window.pageYOffset;
-        const distance = targetPosition - startPosition;
-        let startTime = null;
-
-        const easeInOutQuad = (t) => {
-            return t < 0.5 ? 2 * t * t : -1 + (4 - 2 * t) * t;
-        };
-
-        const animation = (currentTime) => {
-            if (startTime === null) startTime = currentTime;
-            const timeElapsed = currentTime - startTime;
-            const progress = Math.min(timeElapsed / duration, 1);
-            
-            window.scrollTo(0, startPosition + distance * easeInOutQuad(progress));
-            
-            if (timeElapsed < duration) {
-                requestAnimationFrame(animation);
-            }
-        };
-
-        requestAnimationFrame(animation);
-    };
-
-    const handleNavClick = (e, targetId) => {
-        e.preventDefault();
-        setShowOverlay(false);
-        
-        if (targetId === 'home') {
-            smoothScrollTo(0);
-        } else {
-            const targetElement = document.getElementById(targetId);
-            if (targetElement) {
-                const offsetTop = targetElement.offsetTop - 100;
-                smoothScrollTo(offsetTop);
-            }
-        }
-    };
-
     useEffect(() => {
         if (showOverlay) {
             document.body.style.overflow = 'hidden';
@@ -67,12 +28,12 @@ export default function Navbar({ scrollY }) {
                             </a>
                         </div>
                         <ul className="hidden lg:flex space-x-4 justify-center text-base absolute left-1/2 transform -translate-x-1/2">
-                            <a href="#home" onClick={(e) => handleNavClick(e, 'home')} className="text-[#ceced3] px-3 py-1 hover:text-[#FFFFFF] hover:bg-[rgba(255,255,255,0.15)] rounded-lg transition-all duration-300 text-center">Home</a>
-                            <a href="#about" onClick={(e) => handleNavClick(e, 'about')} className="text-[#ceced3] px-3 py-1 hover:text-[#FFFFFF] hover:bg-[rgba(255,255,255,0.15)] rounded-lg transition-all duration-300 text-center">About</a>
-                            <a href="#skills" onClick={(e) => handleNavClick(e, 'skills')} className="text-[#ceced3] px-3 py-1 hover:text-[#FFFFFF] hover:bg-[rgba(255,255,255,0.15)] rounded-lg transition-all duration-300 text-center">Skills</a>
-                            <a href="#projects" onClick={(e) => handleNavClick(e, 'projects')} className="text-[#ceced3] px-3 py-1 hover:text-[#FFFFFF] hover:bg-[rgba(255,255,255,0.15)] rounded-lg transition-all duration-300 text-center">Projects</a>
-                            <a href="#experience" onClick={(e) => handleNavClick(e, 'experience')} className="text-[#ceced3] px-3 py-1 hover:text-[#FFFFFF] hover:bg-[rgba(255,255,255,0.15)] rounded-lg transition-all duration-300 text-center">Experience</a>
-                            <a href="#contact" onClick={(e) => handleNavClick(e, 'contact')} className="text-[#ceced3] px-3 py-1 hover:text-[#FFFFFF] hover:bg-[rgba(255,255,255,0.15)] rounded-lg transition-all duration-300 text-center">Contact</a>
+                            <a href="#root" className="text-[#ceced3] px-3 py-1 hover:text-[#FFFFFF] hover:bg-[rgba(255,255,255,0.15)] rounded-lg transition-all duration-300 text-center">Home</a>
+                            <a href="#about" className="text-[#ceced3] px-3 py-1 hover:text-[#FFFFFF] hover:bg-[rgba(255,255,255,0.15)] rounded-lg transition-all duration-300 text-center">About</a>
+                            <a href="#skills" className="text-[#ceced3] px-3 py-1 hover:text-[#FFFFFF] hover:bg-[rgba(255,255,255,0.15)] rounded-lg transition-all duration-300 text-center">Skills</a>
+                            <a href="#projects" className="text-[#ceced3] px-3 py-1 hover:text-[#FFFFFF] hover:bg-[rgba(255,255,255,0.15)] rounded-lg transition-all duration-300 text-center">Projects</a>
+                            <a href="#experience" className="text-[#ceced3] px-3 py-1 hover:text-[#FFFFFF] hover:bg-[rgba(255,255,255,0.15)] rounded-lg transition-all duration-300 text-center">Experience</a>
+                            <a href="#contact" className="text-[#ceced3] px-3 py-1 hover:text-[#FFFFFF] hover:bg-[rgba(255,255,255,0.15)] rounded-lg transition-all duration-300 text-center">Contact</a>
                         </ul>
                         <div className='hidden lg:flex flex-1 justify-end items-center space-x-4'>
                             <a href="downloadable/Rachid Mustapha Amine.pdf" download className="cursor-pointer text-black text-sm px-2 py-2 bg-white rounded-lg transition-all duration-300 hover:bg-[rgb(188,185,185)] flex items-center justify-center">
@@ -101,11 +62,12 @@ export default function Navbar({ scrollY }) {
                 <div className="bg-black h-screen fixed inset-0 z-40">
                     <div className="flex items-center justify-center h-full pt-16">
                         <div className="flex flex-col items-center space-y-8">
-                            <a href="#home" onClick={(e) => handleNavClick(e, 'home')} className="text-[#ceced3] px-6 py-3 hover:text-[#FFFFFF] transition-all duration-300 text-2xl text-center">Home</a>
-                            <a href="#about" onClick={(e) => handleNavClick(e, 'about')} className="text-[#ceced3] px-6 py-3 hover:text-[#FFFFFF] transition-all duration-300 text-2xl text-center">About</a>
-                            <a href="#skills" onClick={(e) => handleNavClick(e, 'skills')} className="text-[#ceced3] px-6 py-3 hover:text-[#FFFFFF] transition-all duration-300 text-2xl text-center">Skills</a>
-                            <a href="#experience" onClick={(e) => handleNavClick(e, 'experience')} className="text-[#ceced3] px-6 py-3 hover:text-[#FFFFFF] transition-all duration-300 text-2xl text-center">Experience</a>
-                            <a href="#contact" onClick={(e) => handleNavClick(e, 'contact')} className="text-[#ceced3] px-6 py-3 hover:text-[#FFFFFF] transition-all duration-300 text-2xl text-center">Contact</a>
+                            <a onClick={() => setShowOverlay(false)} href="#root" className="text-[#ceced3] px-6 py-3 hover:text-[#FFFFFF] transition-all duration-300 text-2xl text-center">Home</a>
+                            <a onClick={() => setShowOverlay(false)} href="#about" className="text-[#ceced3] px-6 py-3 hover:text-[#FFFFFF] transition-all duration-300 text-2xl text-center">About</a>
+                            <a onClick={() => setShowOverlay(false)} href="#skills" className="text-[#ceced3] px-6 py-3 hover:text-[#FFFFFF] transition-all duration-300 text-2xl text-center">Skills</a>
+                            <a onClick={() => setShowOverlay(false)} href="#projects" className="text-[#ceced3] px-6 py-3 hover:text-[#FFFFFF] transition-all duration-300 text-2xl text-center">Projects</a>
+                            <a onClick={() => setShowOverlay(false)} href="#experience" className="text-[#ceced3] px-6 py-3 hover:text-[#FFFFFF] transition-all duration-300 text-2xl text-center">Experience</a>
+                            <a onClick={() => setShowOverlay(false)} href="#contact" className="text-[#ceced3] px-6 py-3 hover:text-[#FFFFFF] transition-all duration-300 text-2xl text-center">Contact</a>
                             
                             <div className="mt-8">
                                 <a href="downloadable/Rachid Mustapha Amine.pdf" download className="cursor-pointer text-black font-[Geist-Medium] text-xl px-6 py-3 bg-white rounded-lg transition-all duration-300 hover:bg-[rgb(188,185,185)] flex items-center justify-center">
