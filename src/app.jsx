@@ -5,6 +5,7 @@ import Experience from './components/experience.jsx'
 import Skills from './components/skills.jsx'
 import Footer from './components/footer.jsx'
 import Projects from './components/projects.jsx';
+import Contact from './components/contact.jsx'
 
 function SetMainSection() {
     return (
@@ -19,14 +20,14 @@ function SetMainSection() {
                     <img src='/images/panelmobile.png' alt='PanelMobile' className='md:hidden shadow-2xl shadow-black'></img>
                     <div className="hidden absolute bottom-10 md:right-24 md:flex flex-row gap-3">
                         <div className='rounded-lg border border-white/20 hover:border-white transition-all duration-200'>
-                            <button className="m-1 bg-white text-black px-6 py-3 rounded-md font-[Geist-Medium] text-sm transition-all duration-300 flex items-center justify-center">
+                            <a href='#projects' className="cursor-pointer m-1 bg-white text-black px-6 py-3 rounded-md font-[Geist-Medium] text-sm transition-all duration-300 flex items-center justify-center">
                                 View My Work
-                            </button> 
+                            </a> 
                         </div>
                         <div className='rounded-lg border border-white/20 hover:border-white transition-all duration-200'>
-                            <button className="m-1 bg-black text-white px-6 py-3 rounded-lg font-[Geist-Medium] text-sm flex items-center justify-center">
+                            <a href='#contact' className="cursor-pointer m-1 bg-black text-white px-6 py-3 rounded-lg font-[Geist-Medium] text-sm flex items-center justify-center">
                                 Contact Me
-                            </button>
+                            </a>
                         </div>
                     </div>
                     <div className='w-full h-56 md:hidden absolute bg-gradient-to-b from-white/0 to-black bottom-0 left-0 pointer-events-none z-20'>
@@ -56,7 +57,10 @@ function SetMainSection() {
                 </div>
                 <div id="experience">
                     <Experience />
-                </div>            
+                </div>   
+                <div id="contact">
+                    <Contact />
+                </div>          
             </div>
             <Footer />
         </>

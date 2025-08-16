@@ -108,7 +108,7 @@ export default function Navbar({ scrollY }) {
                             <a href="#contact" onClick={(e) => handleNavClick(e, 'contact')} className="text-[#ceced3] px-6 py-3 hover:text-[#FFFFFF] transition-all duration-300 text-2xl text-center">Contact</a>
                             
                             <div className="mt-8">
-                                <a href="downloadable/Rachid Mustapha Amine.pdf" download className="cursor-pointer text-black text-lg px-6 py-3 bg-white rounded-lg transition-all duration-300 hover:bg-[rgb(188,185,185)] flex items-center justify-center">
+                                <a href="downloadable/Rachid Mustapha Amine.pdf" download className="cursor-pointer text-black font-[Geist-Medium] text-xl px-6 py-3 bg-white rounded-lg transition-all duration-300 hover:bg-[rgb(188,185,185)] flex items-center justify-center">
                                     <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 mr-2" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#000000" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M3 15v4c0 1.1.9 2 2 2h14a2 2 0 0 0 2-2v-4M17 9l-5 5-5-5M12 12.8V2.5"/></svg>
                                     Download Resume
                                 </a>
