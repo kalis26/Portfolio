@@ -16,4 +16,5 @@ The goal of this portfolio is to highlight my journey, share my work, and provid
 
 > [Live Demo](https://amine-mustapha-rachid.vercel.app/)
 
+\
 ⭐ If you like this project, consider giving it a star!
