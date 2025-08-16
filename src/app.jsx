@@ -35,14 +35,14 @@ function SetMainSection() {
                     </div>
                     <div className='p-4 flex flex-col gap-3 md:hidden z-30 absolute bottom-8 left-0 right-0'>
                         <div className='flex w-full rounded-lg border border-white/20 hover:border-white transition-all duration-200'>
-                            <button className="flex-1 m-1 bg-white text-black px-6 py-3 rounded-md font-[Geist-Medium] text-sm transition-all duration-300 flex items-center justify-center">
+                            <a href='#projects' className="cursor-pointer flex-1 m-1 bg-white text-black px-6 py-3 rounded-md font-[Geist-Medium] text-sm transition-all duration-300 flex items-center justify-center">
                                 View My Work
-                            </button> 
+                            </a> 
                         </div>
                         <div className='flex w-full rounded-lg border border-white/20 hover:border-white transition-all duration-200'>
-                            <button className="flex-1 m-1 bg-black text-white px-6 py-3 rounded-md font-[Geist-Medium] text-sm transition-all duration-300 flex items-center justify-center">
+                            <a href='#contact' className="cursor-pointer flex-1 m-1 bg-black text-white px-6 py-3 rounded-md font-[Geist-Medium] text-sm transition-all duration-300 flex items-center justify-center">
                                 Contact Me
-                            </button>
+                            </a>
                         </div>
                     </div>
                 </div>
