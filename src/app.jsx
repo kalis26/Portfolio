@@ -16,8 +16,10 @@ function SetMainSection() {
                         <h1 className='text-white font-[Geist-Bold] text-6xl text-center'>Amine Rachid</h1>
                         <p className='text-white/70 font-[Geist-Regular] text-2xl text-center'>Computer Science Student & Junior Dev</p>
                     </div>
-                    <img src='/images/panel.png' alt='Panel' className='hidden md:block mx-auto shadow-2xl shadow-black'></img>
-                    <img src='/images/panelmobile.png' alt='PanelMobile' className='md:hidden shadow-2xl shadow-black'></img>
+                    <img src='/images/panel.webp' alt='Panel' className='hidden md:block mx-auto shadow-2xl shadow-black'></img>
+                    <div className='md:hidden w-full aspect-[4/5] bg-gray-900/20 rounded-lg overflow-hidden shadow-2xl shadow-black'>
+                        <img src='/images/panelmobile.webp' alt='PanelMobile' loading='eager' className='w-full h-full object-cover'></img>
+                    </div>
                     <div className="hidden absolute bottom-10 md:right-24 md:flex flex-row gap-3">
                         <div className='rounded-lg border border-white/20 hover:border-white transition-all duration-200'>
                             <a href='#projects' className="cursor-pointer m-1 bg-white text-black px-6 py-3 rounded-md font-[Geist-Medium] text-sm transition-all duration-300 flex items-center justify-center">

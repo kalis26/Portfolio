@@ -23,7 +23,7 @@ export default function Navbar({ scrollY }) {
                     <div className={`navbar flex items-center relative bg-black rounded-2xl p-4 font-[Geist-Medium] transition-all duration-500 ease-out ${scrollY > 50 && !showOverlay ? 'border border-white/10 shadow-[0_0_20px_rgba(255,255,255,0.08)]' : 'border border-transparent'}`}>
                         <div className='flex-1 items-center justify-center'>
                             <a href='/' className='text-[#ebebed] font-[Michroma] text-xl font-bold'>
-                                <img src="/images/logo.png" alt="Logo" className="inline-block h-8 w-8 mr-2" />
+                                <img src="/images/logo.webp" alt="Logo" className="inline-block h-8 w-8 mr-2" />
                                 AMR
                             </a>
                         </div>

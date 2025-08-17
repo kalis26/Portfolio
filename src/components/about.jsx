@@ -2,7 +2,7 @@ const Todo = ({title, details, imgsrc}) => {
     return (
         <div className="bg-black shadow-[0_0_20px_rgba(255,255,255,0.08)] rounded-xl flex flex-col border-2 border-white/15 hover:border-white/50 transition-all duration-300 flex-1 min-w-[280px] max-w-sm">
             <div className="w-full relative">
-                <img className="w-full rounded-t-xl z-20" src={imgsrc}></img>
+                <img loading="lazy" className="w-full rounded-t-xl z-20" src={imgsrc}></img>
                 <div className="h-32 w-full absolute bg-gradient-to-b from-white/0 to-black z-30 bottom-0 left-0 pointer-events-none"></div>
             </div>       
             <div className="flex flex-col items-center justify-center flex-1 p-4">

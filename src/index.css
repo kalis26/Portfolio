@@ -6,21 +6,25 @@
 @font-face {
     font-family: 'Geist-Regular';
     src: url('../public/fonts/Geist-Regular.woff2') format('woff2');
+    font-display: swap;
 }
 
 @font-face {
     font-family: 'Geist-Bold';
     src: url('../public/fonts/Geist-Bold.woff2') format('woff2');
+    font-display: swap;
 }
 
 @font-face {
     font-family: 'Geist-Medium';
     src: url('../public/fonts/Geist-Medium.woff2') format('woff2');
+    font-display: swap;
 }
 
 @font-face {
     font-family: 'Michroma';
     src: url('../public/fonts/Michroma-Regular.woff2') format('woff2');
+    font-display: swap;
 }
 
 html {

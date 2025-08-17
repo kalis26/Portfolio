@@ -44,8 +44,8 @@ function ListExperience({exp}) {
 }
 
 const exp = [
-    {key: 1, imgsrc: '/images/esilogo.png', title: 'Computer Science Student @ ESI', date: 'Sep. 2024 - Present', place: 'Oued Smar, 16309 Alger', description: '2nd year computer science student at École nationale Supérieure d\'Informatique. Preparing an engineering degree in CS.'},
-    {key: 2, imgsrc: '/images/gizlogo.png', title: 'Intern @ GIZ Algeria', date: 'Aug. 2025 - Sep. 2025', place: '34, rue Mohamed Khoudi, El Biar, 16606 Alger', description: 'Discovery internship within the PEFEVA project (Promotion de l’Entrepreneuriat Féminin dans l’Économie Verte en Algérie), an international cooperation program led by GIZ.'},
+    {key: 1, imgsrc: '/images/esilogo.webp', title: 'Computer Science Student @ ESI', date: 'Sep. 2024 - Present', place: 'Oued Smar, 16309 Alger', description: '2nd year computer science student at École nationale Supérieure d\'Informatique. Preparing an engineering degree in CS.'},
+    {key: 2, imgsrc: '/images/gizlogo.webp', title: 'Intern @ GIZ Algeria', date: 'Aug. 2025 - Sep. 2025', place: '34, rue Mohamed Khoudi, El Biar, 16606 Alger', description: 'Discovery internship within the PEFEVA project (Promotion de l’Entrepreneuriat Féminin dans l’Économie Verte en Algérie), an international cooperation program led by GIZ.'},
     {key: 3, imgsrc: '', title: 'Baccalaureate', date: 'July 2024', place: 'Lycée Taher Serir - Annexe Ahmed Hamissi, Ouled Chebel, 16118 Alger', description: 'Graduated from high-school with honors in the experimental science stream, with a grade of 18.51/20.'}
 ];
 
