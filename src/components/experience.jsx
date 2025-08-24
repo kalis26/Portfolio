@@ -9,7 +9,7 @@ const ExperienceDetails = ({imgsrc, title, date, place, description, keyValue}) 
                 {imgsrc &&
                 <img src={imgsrc} className="mr-2 w-10 h-8 border-r-2 pr-2 border-white/10 invert-1"></img>}
                 
-                <h2 className="text-white font-[Geist-Medium] md:text-2xl text-xl pb-1 inline-block">
+                <h2 className="text-[#EAEAEA] font-[Geist-Medium] md:text-2xl text-xl pb-1 inline-block">
                     {title}
                 </h2>
                 <p className="text-white/50 inline-block pb-1 ml-auto">{date}</p>
@@ -37,7 +37,7 @@ function ListExperience({exp}) {
 
     return (
         <div className="flex md:p-6 p-1 flex-col gap-8">
-            <h1 className="text-center md:text-left text-5xl text-white font-[Geist-Bold] md:p-4 p-2">Experience & Education</h1>
+            <h1 className="text-center md:text-left text-5xl text-[#EAEAEA] font-[Geist-Bold] md:p-4 p-2">Experience & Education</h1>
             {listexp}
         </div>
     );

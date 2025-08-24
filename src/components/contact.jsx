@@ -3,10 +3,10 @@ export default function Contact() {
         <div className="flex flex-col gap-6 justify-center items-center">
             <div className="font-[Geist-Bold] md:text-left text-5xl md:p-4 p-2 text-center">
                 <h1 className="text-white/70 inline-block mr-3">Would like to</h1>
-                <h1 className="text-white inline-block"> get in touch ?</h1>
+                <h1 className="text-[#EAEAEA] inline-block"> get in touch ?</h1>
             </div>  
             <div className="flex flex-col gap-6 items-center shadow-lg shadow-white/5 border-white/5 border-2 bg-white/5 p-8 rounded-xl w-full md:max-w-screen-md">
-                <h1 className="text-white font-[Geist-Bold] text-3xl">Contact Me</h1>
+                <h1 className="text-[#EAEAEA] font-[Geist-Bold] text-3xl">Contact Me</h1>
                 <p className="text-white/70 font-[Geist-Regular] text-lg pb-6 text-center">If you’d like to drop me a message, feel 
                 free to reach out on any of the platforms below. I’m always open to collaborating on projects, 
                 exchanging ideas, or sharing knowledge.

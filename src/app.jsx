@@ -13,7 +13,7 @@ function SetMainSection() {
             <div className="p-5 md:p-10 flex flex-col gap-16 lg:gap-36">
                 <div className='md:shadow-lg shadow-white/15 rounded-lg pt-6 pl-6 pr-6 md:rounded-2xl md:pt-16 md:pl-6 md:pr-6 bg-[linear-gradient(red,transparent),linear-gradient(to_top_left,lime,transparent),linear-gradient(to_top_right,blue,transparent)] bg-[length:auto] bg-blend-screen relative'>
                     <div className='flex flex-col items-center justify-center pb-28 md:hidden'>
-                        <h1 className='text-white font-[Geist-Bold] text-6xl text-center'>Amine Rachid</h1>
+                        <h1 className='text-[#EAEAEA] font-[Geist-Bold] text-6xl text-center'>Amine Rachid</h1>
                         <p className='text-white/70 font-[Geist-Regular] text-2xl text-center'>Computer Science Student & Junior Dev</p>
                     </div>
                     <img src='/images/panel.webp' alt='Panel' className='hidden md:block mx-auto shadow-2xl shadow-black'></img>
@@ -85,7 +85,7 @@ export default function SetApp() {
     }, []);
 
     return (
-        <div className="min-h-screen bg-black">
+        <div className="min-h-screen bg-[#121212]">
             <Navbar scrollY={scrollY} />
             <div className="pt-24">
                 <SetMainSection />

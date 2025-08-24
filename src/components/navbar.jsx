@@ -19,8 +19,8 @@ export default function Navbar({ scrollY }) {
     return (
         <>
             <nav className='fixed top-4 lg:top-6 z-50 w-full'>
-                <div className="container mx-auto max-w-[1672px] px-8 md:px-14">
-                    <div className={`navbar flex items-center relative bg-black rounded-2xl p-4 font-[Geist-Medium] transition-all duration-500 ease-out ${scrollY > 50 && !showOverlay ? 'border border-white/10 shadow-[0_0_20px_rgba(255,255,255,0.08)]' : 'border border-transparent'}`}>
+                <div className="container mx-auto max-w-[1672px] px-2 md:px-14">
+                    <div className={`navbar flex items-center relative bg-[#121212] rounded-2xl p-4 font-[Geist-Medium] transition-all duration-500 ease-out ${scrollY > 50 && !showOverlay ? 'border border-white/10 shadow-[0_0_20px_rgba(255,255,255,0.08)]' : 'border border-transparent'}`}>
                         <div className='flex-1 items-center justify-center'>
                             <a href='/' className='text-[#ebebed] font-[Michroma] text-xl font-bold'>
                                 <img src="/images/logo.webp" alt="Logo" className="inline-block h-8 w-8 mr-2" />
@@ -36,7 +36,7 @@ export default function Navbar({ scrollY }) {
                             <a href="#contact" className="text-[#ceced3] px-3 py-1 hover:text-[#FFFFFF] hover:bg-[rgba(255,255,255,0.15)] rounded-lg transition-all duration-300 text-center">Contact</a>
                         </ul>
                         <div className='hidden lg:flex flex-1 justify-end items-center space-x-4'>
-                            <a href="downloadable/Rachid Mustapha Amine.pdf" download className="cursor-pointer text-black text-sm px-2 py-2 bg-white rounded-lg transition-all duration-300 hover:bg-[rgb(188,185,185)] flex items-center justify-center">
+                            <a href="downloadable/Rachid Mustapha Amine.pdf" download className="cursor-pointer text-black text-sm px-2 py-2 bg-[#EAEAEA] rounded-lg transition-all duration-300 hover:bg-[rgb(188,185,185)] flex items-center justify-center">
                                 <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 mr-1" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#000000" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M3 15v4c0 1.1.9 2 2 2h14a2 2 0 0 0 2-2v-4M17 9l-5 5-5-5M12 12.8V2.5"/></svg>
                                 Download Resume
                             </a>
@@ -70,7 +70,7 @@ export default function Navbar({ scrollY }) {
                             <a onClick={() => setShowOverlay(false)} href="#contact" className="text-[#ceced3] px-6 py-3 hover:text-[#FFFFFF] transition-all duration-300 text-2xl text-center">Contact</a>
                             
                             <div className="mt-8">
-                                <a href="downloadable/Rachid Mustapha Amine.pdf" download className="cursor-pointer text-black font-[Geist-Medium] text-xl px-6 py-3 bg-white rounded-lg transition-all duration-300 hover:bg-[rgb(188,185,185)] flex items-center justify-center">
+                                <a href="downloadable/Rachid Mustapha Amine.pdf" download className="cursor-pointer text-black font-[Geist-Medium] text-xl px-6 py-3 bg-[#EAEAEA] rounded-lg transition-all duration-300 hover:bg-[rgb(188,185,185)] flex items-center justify-center">
                                     <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 mr-2" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#000000" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M3 15v4c0 1.1.9 2 2 2h14a2 2 0 0 0 2-2v-4M17 9l-5 5-5-5M12 12.8V2.5"/></svg>
                                     Download Resume
                                 </a>
