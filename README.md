@@ -1,6 +1,6 @@
 # 🌐 Personal Portfolio – Amine Mustapha Rachid
 
-This is my personal portfolio website, built to showcase my projects, skills, and experiences as a **Computer Science student at ESI (École Nationale Supérieure d'Informatique)**.  
+This is my personal portfolio website, built to showcase my projects, skills, and experience as a **Computer Science student at ESI (École Nationale Supérieure d'Informatique)**.  
 The goal of this portfolio is to highlight my journey, share my work, and provide an easy way to connect with me.
 
 ## 📌 Features
